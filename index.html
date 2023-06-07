@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <aside>
+        <header>
+            <div class="logo">
+                <img src="./assets/img/logo.png" alt="">
+            </div>
+        </header>
+        <div class="list">
+            <h4>ADMINISTRATOR</h4>
+            <ul>
+                <li class="active">
+                    <div class="icon-gradient">
+                        <i class="fa-solid fa-chart-simple"></i>
+                    </div>
+                    Dashboard
+                </li>
+                <li>
+                    <div class="icon-gradient">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    Messages
+                </li>
+                <li>
+                    <div class="icon-gradient">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    Socials
+                </li>
+                <li>
+                    <div class="icon-gradient">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                    Documents
+                </li>
+            </ul>
+        </div>
+        <div class="list">
+            <h4>SETTINGS</h4>
+            <ul>
+                <li>
+                    <div class="icon-gradient">
+                        <i class="fa-solid fa-user-group"></i>
+                    </div>
+                    Roles
+                </li>
+                <li>
+                    <div class="icon-gradient">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </div>
+                    Requests
+                </li>
+                <li>
+                    <div class="icon-gradient">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    Preferences
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <main>
+        <header>
+            <input id="search" type="text" placeholder="Type anywhere to search">
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Dashboard</a></li>
+            </ul>
+        </header>
+        <div class="container">
+            <div class="card">
+                <header>
+                    <h4>
+                        <i class=" update fa-solid fa-circle"></i>
+                        Update
+                    </h4>
+                </header>
+                <b>Sales revenue increased <span class="percent">20%</span> in 1 week</b>
+                <footer>
+                    <button>
+                        see analytics
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </footer>
+            </div>
+            <div class="card">
+                <header>
+                    <h4>
+                        Net Revenue
+                    </h4>
+                </header>
+                <h2>$123,000</h2>
+                <footer>
+                    <button>
+                        <span class="percent">5%</span> vs last month
+                    </button>
+                </footer>
+            </div>
+            <div class="card">
+                <header>
+                    <h4>
+                        Weekly Sales
+                    </h4>
+                </header>
+                <h2>$123,000</h2>
+                <footer>
+                    <button>
+                        <span class="percent">71%</span> see analytics
+                        
+                    </button>
+                </footer>
+            </div>
+            <div class="card">
+                <header>
+                    <h4>
+                        Page visits 
+                    </h4>
+                </header>
+                <h2>
+                    423
+                </h2>
+                <footer>
+                    <button>
+                        see analytics
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </footer>
+            </div>
+            <div class="card">
+                <header>
+                    <h4>
+                        Analytics 
+                    </h4>
+                    <canvas id="myChart"></canvas>
+                </header>
+            </div>
+        </div>
+        <div class="card">
+            <header>
+                <h4>
+                    Analytics 
+                </h4>
+                <canvas id="myChart2"></canvas>
+            </header>
+        </div>
+    </div>
+        <div class="container">
+            <div class="inner-container"></div>
+            <div class="inner-container"></div>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

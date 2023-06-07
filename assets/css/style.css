@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+}
+
+aside{
+    background-color: #FAFAFA;
+    width: 25%;
+    height: 100%;
+    color: rgb(80, 80, 80);
+    padding: 20px;
+}
+
+main{
+    padding: 20px;
+    width: 75%;
+}
+
+#search{
+    border: none;
+    outline: none;
+    background: url('../img/lupa.svg') no-repeat scroll 0px 0px;
+    padding-left: 22px;
+}
+
+#search:focus{
+    border: none;
+    outline: none;
+}
+
+aside h4 {
+    font-size: 12px;
+    margin-bottom: 8px;
+    font-weight: bolder;
+}
+
+aside .logo img{
+    width: 50%;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li{
+    padding: 20px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+aside ul li.active{
+    background-color: #232323;
+    color: white;
+}
+.icon-gradient {
+    display: inline-block;
+}
+.active .icon-gradient{
+    background: -moz-linear-gradient(90deg, rgba(130,197,91,1) 0%, rgba(0,95,54,1) 100%);;
+    background: -webkit-linear-gradient(90deg, rgba(130,197,91,1) 0%, rgba(0,95,54,1) 100%);;
+    background: linear-gradient(90deg, rgba(130,197,91,1) 0%, rgba(0,95,54,1) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Breadcrumb */
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+  }
+  
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 14px;
+  }
+  
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+
+  .breadcrumb .active{
+    font-weight: bolder;
+    color: rgb(49, 49, 49);
+  }
+
+  .percent, .update{
+    color: rgba(0,95,54,1);
+    font-weight: bold;
+    display: inline;
+  }
+
+  .card{
+    padding: 20px;
+    background-color: #FAFAFA;
+    border-radius: 20px;
+    margin: 0 5px;
+    width: 25%;
+  }
+
+  .card header{
+    margin-bottom: 20px;
+  }
+
+  .card footer{
+    margin-top: 20px;
+  }
+
+  .container{
+    display: flex;
+  }
+
+
